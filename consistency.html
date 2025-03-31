@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Checkbox Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .month {
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            padding: 10px;
+        }
+        .day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>2025 Checkbox Calendar</h1>
+    <div id="calendar"></div>
+    <script>
+        const months = [
+            "January", "February", "March", "April", "May", "June", 
+            "July", "August", "September", "October", "November", "December"
+        ];
+        
+        function createCalendar() {
+            const calendar = document.getElementById("calendar");
+            const savedData = JSON.parse(localStorage.getItem("checkboxCalendar2025")) || {};
+            
+            for (let i = 0; i < 12; i++) {
+                let monthDiv = document.createElement("div");
+                monthDiv.classList.add("month");
+                
+                let title = document.createElement("h2");
+                title.textContent = months[i];
+                monthDiv.appendChild(title);
+                
+                let daysDiv = document.createElement("div");
+                daysDiv.classList.add("days");
+                
+                let daysInMonth = new Date(2025, i + 1, 0).getDate();
+                for (let day = 1; day <= daysInMonth; day++) {
+                    let dayDiv = document.createElement("div");
+                    dayDiv.classList.add("day");
+                    
+                    let label = document.createElement("label");
+                    label.textContent = day;
+                    
+                    let checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    let key = `${i}-${day}`;
+                    checkbox.checked = savedData[key] || false;
+                    
+                    checkbox.addEventListener("change", () => {
+                        savedData[key] = checkbox.checked;
+                        localStorage.setItem("checkboxCalendar2025", JSON.stringify(savedData));
+                    });
+                    
+                    dayDiv.appendChild(label);
+                    dayDiv.appendChild(checkbox);
+                    daysDiv.appendChild(dayDiv);
+                }
+                monthDiv.appendChild(daysDiv);
+                calendar.appendChild(monthDiv);
+            }
+        }
+        createCalendar();
+    </script>
+</body>
+</html>
