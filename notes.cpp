@@ -1090,20 +1090,18 @@ Questions :-
 
 
 <--------------------------------------------------------------------------------------------------------------------------------->
-/** Lecture 60 **\
+/** Lecture 61 **\
 
 ❓
 ❓📌
-
 
 ❓ Queue Reversal: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblJGNlR2cU9USG01amNJa0ZiUHZSbGo5OE5WQXxBQ3Jtc0tuc3o1V3B2UlBmVFl0eGVIWW9mZ1N3dXo2MHZsSjA3QkJoQk85NHozSEVtLU9XQTQ0cW1BUkYxSE95TEJ1enZMMFNmTWYwejFYb09KSnpFTGtyVmhzOGtFQzdhaERub2F4cDhmaFlBLU12TW00UDlPVQ&q=https%3A%2F%2Fpractice.geeksforgeeks.org%2Fproblems%2Fqueue-reversal%2F1&v=_gJ3to4RyeQ
 ❓📌📌 First negative integer in every window of size K:https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUVISTNPQmUyMXU1aGQ3cEFoQ2NCaVZhUFBUQXxBQ3Jtc0tuM1hBc3g0WTFGMk5ONWRRQmVFZVduVjUtLWk5a1YwLUkyYndVMDFYcTdoSXRwb1hTYTNiYjN0eDRDV1ZUUm5VYjQ4b1IxQjFQSUxCbGRWdmJOMC0zajNyWlZTTmdnOVRVeWRyN3FEMVAwYjNUMTRuOA&q=https%3A%2F%2Fpractice.geeksforgeeks.org%2Fproblems%2Ffirst-negative-integer-in-every-window-of-size-k3345%2F1&v=_gJ3to4RyeQ
 ❓Reverse first K element of Queue: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0JzNTV0aXNDdnB6TEkzOUV1RC1laHJTaXBsUXxBQ3Jtc0ttOE12NzNHR1lJbDFrVllOWkFFX1Z5a2JJU0pfeEk1Rzg5QVh5UHRaUEJXdF9IdTBkamFBZk1Zbm5fOHY0T21ybS1lWkJ4dExTdXpwakFabjJ0cGJlVFkyNU1Kc21FT0poYmVmUXdBSkJHdEhLSHE1cw&q=https%3A%2F%2Fpractice.geeksforgeeks.org%2Fproblems%2Freverse-first-k-elements-of-queue%2F1%2F&v=_gJ3to4RyeQ
 ❓📌📌📌📌First Non-Repeating character in stream:https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
-❓Circular tour: https://practice.geeksforgeeks.org/pr...
+❓📌📌📌Circular tour(Gas Station): Leetcode -134
 ❓K Queue in Single Array:https://www.geeksforgeeks.org/efficie...
 ❓Sum of min & max elements of all subarray of size K: https://www.geeksforgeeks.org/sum-min...
-
 
 
 
