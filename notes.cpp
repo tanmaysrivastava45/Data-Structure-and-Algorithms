@@ -1100,6 +1100,7 @@ Questions :-
 ❓Reverse first K element of Queue: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0JzNTV0aXNDdnB6TEkzOUV1RC1laHJTaXBsUXxBQ3Jtc0ttOE12NzNHR1lJbDFrVllOWkFFX1Z5a2JJU0pfeEk1Rzg5QVh5UHRaUEJXdF9IdTBkamFBZk1Zbm5fOHY0T21ybS1lWkJ4dExTdXpwakFabjJ0cGJlVFkyNU1Kc21FT0poYmVmUXdBSkJHdEhLSHE1cw&q=https%3A%2F%2Fpractice.geeksforgeeks.org%2Fproblems%2Freverse-first-k-elements-of-queue%2F1%2F&v=_gJ3to4RyeQ
 ❓📌📌📌📌First Non-Repeating character in stream:https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
 ❓📌📌📌Circular tour(Gas Station): Leetcode -134
+❓Interleave the first half of the queue with the second half(GFG)
 ❓K Queue in Single Array:https://www.geeksforgeeks.org/efficie...
 ❓Sum of min & max elements of all subarray of size K: https://www.geeksforgeeks.org/sum-min...
 
