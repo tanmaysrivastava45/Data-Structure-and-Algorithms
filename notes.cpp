@@ -1105,6 +1105,9 @@ Questions :-
 ❓Sum of min & max elements of all subarray of size K: https://www.geeksforgeeks.org/sum-min...
 
 
+❓📌📌implement queue using stack (232)
+❓📌📌implement stack using queue (225)
+
 
 
 
