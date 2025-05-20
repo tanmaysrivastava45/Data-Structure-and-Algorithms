@@ -1110,9 +1110,36 @@ Questions :-
 
 
 
+📌📌📌📌 📌📌📌📌📌📌📌📌 remember one thing in these types of question of conversion btw infix, prefix, and postfix that a single character is not a string so whenever such conditon occur 
+make sure that you make a character a string by doing this string(1,arr[i]) 📌📌📌📌📌📌📌📌
 
 
 
+
+❓📌📌 conversion question between infix , prefix and postfix check out the striver sheet for that i did all
+these questions from gfg
+📌📌📌📌📌📌Infix to Postfix Conversion using Stack
+     1) check for the precdence of the operator first like ^ is 3 and * and / is 2 and + and - are 1 .
+     2) now if ( this comes then push it directly to the stack and if ) this comes then through a while loop empty the stack until there is (
+     3) now then check for the precedence of operator if precedence of operator is lower than that of stack top element than empty it untll there is low precedence
+
+📌📌Prefix to Infix Conversion
+     simply check the string from backward and accordingly convert it..
+📌📌Prefix to Postfix Conversion
+     similar to what it was in prefix to infix just change the order of how the elements gone push.. 
+📌📌Postfix to Prefix Conversion
+     similar to what's going on above just two changes first is the same order changes and the second one is an extra
+     while loop that runs in the end to empty the stack and push it in ans..
+📌📌Postfix to Infix
+     similar to what we are doing in above problem just one thing order and that's all everything else is same..
+📌📌Convert Infix To Prefix Notation
+     now, this and the top one are the most difficult one so revise this essentially..
+     process:-
+     1) reverse the infix first make sure to change the paranthesis also ))()
+     2) now convert the infix to postfix make sure you convert only when ^ this is encounterd or a closing paranthesis
+     3) now reverse the postfix expression and you are good to go..
+
+do check out striver's sheets problem marked as revise...
 
 
 
