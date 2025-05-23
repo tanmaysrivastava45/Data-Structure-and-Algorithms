@@ -28,14 +28,25 @@
 5) DEGENERATE TREE
 .   ->>every node has a single children...
 
+📌📌📌 Traversal of tree   📌📌📌
 
+there are two types of traversal in binary tree:
+1) BFS (BREADTH FIRST SEARCH)
+2) DFS (DEPTH FIRST SEARCH)
 
+📌📌 DFS
+the traversal is done in length wise or depth wise there are three methods of it :
+📌INORDER TRAVERSAL 
+  ->> LEFT -> ROOT -> RIGHT
 
+📌PREORDER TRAVERSAL 
+  ->> ROOT -> LEFT -> RIGHT
 
+📌POSTORDER TRAVERSAL
+  ->> LEFT -> RIGHT -> ROOT
 
-
-
-
+📌📌 BFS 
+the traversal is done level wise first, second and so on that too from left to right..
 
 
 
