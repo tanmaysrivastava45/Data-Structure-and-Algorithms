@@ -41,7 +41,7 @@ the traversal is done in length wise or depth wise there are three methods of it
    check inorder_traversal.cpp
 📌PREORDER TRAVERSAL 
   ->> ROOT -> LEFT -> RIGHT
-
+   check preorder_traversal.cpp
 📌POSTORDER TRAVERSAL
   ->> LEFT -> RIGHT -> ROOT
 
