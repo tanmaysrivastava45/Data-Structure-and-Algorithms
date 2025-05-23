@@ -38,7 +38,7 @@ there are two types of traversal in binary tree:
 the traversal is done in length wise or depth wise there are three methods of it :
 📌INORDER TRAVERSAL 
   ->> LEFT -> ROOT -> RIGHT
-
+   check inorder_traversal.cpp
 📌PREORDER TRAVERSAL 
   ->> ROOT -> LEFT -> RIGHT
 
