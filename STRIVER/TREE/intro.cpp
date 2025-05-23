@@ -44,6 +44,7 @@ the traversal is done in length wise or depth wise there are three methods of it
    check preorder_traversal.cpp
 📌POSTORDER TRAVERSAL
   ->> LEFT -> RIGHT -> ROOT
+  check postorder_traversal.cpp
 
 📌📌 BFS 
 the traversal is done level wise first, second and so on that too from left to right..
