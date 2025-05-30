@@ -1,0 +1,120 @@
+📘 Vertical Order Traversal of Binary Tree – Code Notes
+📌 Problem Goal
+Perform vertical order traversal of a binary tree:
+
+Print nodes column-by-column (i.e., vertical lines)
+
+In each column:
+
+Nodes should appear top to bottom (level-wise)
+
+If multiple nodes share the same position (x, y), sort them
+
+🧱 Data Structures Used
+1. queue<pair<TreeNode*, pair<int, int>>> q
+Used for BFS traversal (level order)
+
+Stores nodes with their coordinates:
+{node, {x (horizontal), y (vertical)}}
+
+Helps us process nodes level by level while keeping track of position.
+
+2. map<int, map<int, multiset<int>>> mp
+Purpose: Store nodes grouped by x and y coordinates
+
+Hierarchy:
+
+mp[x][y] → stores all node values at position (x, y)
+
+multiset keeps values sorted and allows duplicates
+
+Keys are automatically sorted in map → ensures vertical and level order
+
+3. multiset<int>
+Like a set, but allows duplicate values
+
+Always keeps elements sorted
+
+Useful when multiple nodes exist at the same (x, y) position and need sorting.
+
+🔁 Code Flow Summary
+cpp
+Copy
+Edit
+q.push({root, {0, 0}});  // Start BFS with root at (x=0, y=0)
+
+while (!q.empty()) {
+    auto [node, coord] = q.front(); q.pop();
+    int x = coord.first, y = coord.second;
+
+    mp[x][y].insert(node->val);  // Store value at correct position
+
+    if (node->left) q.push({node->left, {x - 1, y + 1}});
+    if (node->right) q.push({node->right, {x + 1, y + 1}});
+}
+📦 Building the Final Result
+cpp
+Copy
+Edit
+vector<vector<int>> ans;
+
+for (auto p : mp) {
+    vector<int> temp;
+    for (auto t : p.second) {
+        temp.insert(temp.end(), t.second.begin(), t.second.end());
+    }
+    ans.push_back(temp);
+}
+🔍 Explanation:
+Outer for loop: Iterates over each vertical line (x)
+
+Inner for loop: Iterates over each level (y) in that column
+
+temp.insert(...) is used to:
+
+Insert all sorted values from the multiset into the temp vector
+
+More efficient and cleaner than using multiple push_back()
+
+❓ Why Use:
+✅ multiset:
+Allows duplicates
+
+Automatically keeps node values sorted
+
+Ensures lexicographically smallest values come first if ties exist
+
+✅ insert(temp.end(), begin, end):
+Inserts a range of values efficiently
+
+Cleaner than writing a loop with push_back()
+
+Maintains the order from the multiset
+
+🧠 Key Concepts to Remember
+Term	Meaning
+x	Horizontal coordinate (left -1, right +1)
+y	Vertical level (root 0, children +1)
+BFS	Used to maintain level order and track coordinates
+map	Automatically sorted, used to group by x and y
+multiset	Stores sorted node values, allows duplicates
+
+✅ Final Output Format
+The function returns:
+
+cpp
+Copy
+Edit
+vector<vector<int>>
+Where:
+
+Each inner vector represents a vertical column
+
+Columns are ordered left to right
+
+Inside each column:
+
+Nodes appear top to bottom
+
+Ties are broken using value sorting
+
