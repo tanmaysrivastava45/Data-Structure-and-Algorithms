@@ -18,6 +18,14 @@ public:
                 }
             }
         }
+        // inorder to check for the negative cycles
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<n;j++){
+        //         if(dist[i][j]<0){
+        //             cout<<"negative cycle detected"<<endl;
+        //         }
+        //     }
+        // }
     }
 };
 
