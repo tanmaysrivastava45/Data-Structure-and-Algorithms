@@ -1,0 +1,32 @@
+                      HEAP 
+
+
+IT IS A COMPLETE BINARY TREE THAT COMES WITH A HEAP ORDER PROPERTY 
+
+WHAT IS COMPLETE BINARY TREE?
+EVERY LEVEL IS COMPLETELY FILLED EXCEPT THE LAST LEVEL
+NODES ALWAYS ADDED FROM THE LEFT LEAN TOWARDS RIGHT  
+
+HEAP ORDER PROPERTY 
+-> MAX HEAP (PARENT NODE>LEAF NODES)
+-> MIN HEAP (LEAF NODE>PARENT NODE)
+
+3. 🧮 Heap Representation (0-based indexing)
+Typically implemented using arrays:
+
+For node at index i:
+
+Left Child → 2i + 1
+
+Right Child → 2i + 2
+
+Parent → (i - 1) / 2
+
+🔢 Heap Representation (1-Based Indexing)
+If your array starts at index 1 (common in many textbooks or competitive programming), the formulas are:
+
+Relationship	Formula
+Parent of i	i / 2
+Left Child	2 * i
+Right Child	2 * i + 1
+
