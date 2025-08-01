@@ -30,3 +30,25 @@ Parent of i	i / 2
 Left Child	2 * i
 Right Child	2 * i + 1
 
+// using priority queue for the purpose of heap sorting so there are basically two methods
+
+1) maxheap 
+2) minheap 
+
+1) maxheap :-
+    priority_queue<int>pq;
+    whenever elements are pushed it store in descending order meaning the greatest no. on top 
+
+2) minheap :-
+    priority_queue<int,vector<int>,greater<int>>minheap;
+    whenever elements are pushed into it the smallest element is at the top 
+
+
+    ✅ C++ priority_queue (Max-Heap by default)
+Operation   	                     Time Complexity	            Description
+push(x)	                                 O(log n)	             Insert element and maintain heap property
+pop()	                                 O(log n)	              Remove top (largest) element
+top()	                                   O(1)	                  Access the maximum element
+size() / empty()	                       O(1)	                   Check size or if empty
+Access specific element	               ❌ Not allowed	          No random access
+Search / Update / Remove arbitrary	   ❌ Not supported	            Not allowed
